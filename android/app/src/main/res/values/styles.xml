@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/photokik_primary</item>
+        <item name="colorSecondary">@color/photokik_secondary</item>
+        <item name="android:statusBarColor">@color/photokik_background</item>
+        <item name="android:navigationBarColor">@color/photokik_background</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="AppTheme.NoActionBarLaunch" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>
