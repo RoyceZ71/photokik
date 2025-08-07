@@ -1,68 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">PhotoKik</string>
-    
-    <!-- App Description -->
     <string name="app_description">Swipe to organize your photos instantly</string>
-    <string name="app_tagline">Keep memories, kik the rest</string>
-    
-    <!-- Feature Descriptions -->
-    <string name="feature_swipe">Intuitive swipe-based photo organization</string>
-    <string name="feature_ai">Smart AI categorization of your photos</string>
-    <string name="feature_trash">Safe trash with restore functionality</string>
-    <string name="feature_duplicates">Duplicate photo detection and removal</string>
-    
-    <!-- Permission Explanations -->
-    <string name="permission_camera">PhotoKik needs camera access to take photos</string>
-    <string name="permission_storage">PhotoKik needs storage access to organize your photos</string>
-    <string name="permission_photos">PhotoKik needs access to your photos to organize them</string>
-    
-    <!-- Notification Channels -->
-    <string name="photo_processing_channel_name">Photo Processing</string>
-    <string name="photo_processing_channel_description">Notifications for photo processing tasks</string>
-    <string name="gallery_sync_channel_name">Gallery Sync</string>
-    <string name="gallery_sync_channel_description">Notifications for gallery synchronization</string>
-    <string name="general_notifications_channel_name">General</string>
-    <string name="general_notifications_channel_description">General app notifications</string>
-    
-    <!-- UI Text -->
-    <string name="ready_to_use">Ready to Use!</string>
-    <string name="permissions_needed">Permissions Needed</string>
-    <string name="grant_permissions">Grant Permissions</string>
-    <string name="all_permissions_granted">All permissions granted. PhotoKik is ready to help you organize your photos.</string>
-    <string name="permissions_explanation">PhotoKik needs camera and storage permissions to organize your photos.</string>
-    
-    <!-- Features List -->
-    <string name="features_title">Features:</string>
-    <string name="feature_1">📱 Swipe interface for quick decisions</string>
-    <string name="feature_2">🗂️ Smart photo categorization</string>
-    <string name="feature_3">🗑️ Safe trash with restore option</string>
-    <string name="feature_4">⚡ AI-powered duplicate detection</string>
-    
-    <!-- Navigation -->
-    <string name="nav_swipe">Swipe</string>
-    <string name="nav_gallery">Gallery</string>
-    <string name="nav_trash">Trash</string>
-    <string name="nav_settings">Settings</string>
-    
-    <!-- Actions -->
-    <string name="action_keep">Keep</string>
-    <string name="action_kik">Kik</string>
-    <string name="action_restore">Restore</string>
-    <string name="action_delete">Delete</string>
-    <string name="action_share">Share</string>
-    <string name="action_favorite">Favorite</string>
-    
-    <!-- Status Messages -->
-    <string name="loading">Loading...</string>
-    <string name="processing">Processing photos...</string>
-    <string name="syncing">Syncing with gallery...</string>
-    <string name="organizing">Organizing your photos...</string>
-    
-    <!-- Categories -->
-    <string name="category_memories">Memories</string>
-    <string name="category_documents">Documents</string>
-    <string name="category_duplicates">Duplicates</string>
-    <string name="category_blurry">Blurry</string>
-    <string name="category_uncategorized">Uncategorized</string>
+    <string name="swipe_left_kik">Swipe left to kik</string>
+    <string name="swipe_right_keep">Swipe right to keep</string>
+    <string name="gallery">Gallery</string>
+    <string name="trash">Trash</string>
+    <string name="settings">Settings</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="permission_camera">Camera permission needed for taking photos</string>
+    <string name="permission_storage">Storage permission needed for accessing photos</string>
 </resources>

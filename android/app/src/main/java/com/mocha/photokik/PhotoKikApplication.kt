@@ -6,15 +6,7 @@ class PhotoKikApplication : Application() {
     
     override fun onCreate() {
         super.onCreate()
-        
-        // Initialize app components
-        initializeApp()
-    }
-    
-    private fun initializeApp() {
-        // App initialization logic will go here
-        // For now, just basic setup
-        
-        // Future: Initialize database, photo processing, etc.
+        // Initialize app-wide components here if needed
+        // For now, keeping it simple
     }
 }

@@ -1,70 +1,37 @@
-// PhotoKik Android Project - Root Build Script
-// Optimized for JDK 17 and modern Android development
+// PhotoKik Android Project - Simplified Root Build Script
+// No complex configurations, just what works
 
 buildscript {
     ext {
-        // Version definitions
-        kotlin_version = '1.9.25'
-        compose_version = '1.6.7'
-        compose_compiler_version = '1.5.15'
-        android_gradle_plugin_version = '8.3.2'
+        kotlin_version = '1.9.22'
+        compose_version = '1.5.8'
+        android_gradle_plugin_version = '8.2.2'
     }
     
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        google()
         mavenCentral()
-        gradlePluginPortal()
     }
     
     dependencies {
         classpath "com.android.tools.build:gradle:$android_gradle_plugin_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 
 plugins {
-    id 'com.android.application' version '8.3.2' apply false
-    id 'org.jetbrains.kotlin.android' version '1.9.25' apply false
+    id 'com.android.application' version '8.2.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.9.22' apply false
 }
 
 allprojects {
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        google()
         mavenCentral()
-    }
-    
-    // Global configuration for all projects
-    configurations.configureEach {
-        resolutionStrategy {
-            // Force consistent versions
-            force 'androidx.core:core:1.13.1'
-            force 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.2'
-        }
     }
 }
 
 // Clean task
 tasks.register('clean', Delete) {
-    delete layout.buildDirectory
-}
-
-// Gradle wrapper task for consistency
-wrapper {
-    gradleVersion = '8.6'
-    distributionType = Wrapper.DistributionType.BIN
+    delete rootProject.buildDir
 }
